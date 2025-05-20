@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Gaming - Ultimate Gaming Portal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Nexus<span>Gaming</span></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fas fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#esports">Esports</a></li>
+                        <li><a href="#community">Community</a></li>
+                        <li><a href="#login" class="btn btn-primary">Login</a></li>
+                    </ul>
+                </div>
+                <i class="fas fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Level Up Your Gaming Experience</h1>
+                <p>Discover the latest games, news, and join our thriving community of gamers</p>
+                <div class="hero-buttons">
+                    <a href="#games" class="btn btn-primary">Explore Games</a>
+                    <a href="#news" class="btn btn-outline">Latest News</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Games -->
+    <section class="featured-games" id="games">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Games</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="games-grid">
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cyberpunk Overdrive">
+                    <div class="game-info">
+                        <h3 class="game-title">Cyberpunk Overdrive</h3>
+                        <div class="game-meta">
+                            <span class="genre fps">FPS</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p>Immerse yourself in a neon-drenched future where cyber-enhanced mercenaries battle for dominance.</p>
+                        <a href="#" class="btn btn-primary btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1560253023-3ec5d502959f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Realm of Legends">
+                    <div class="game-info">
+                        <h3 class="game-title">Realm of Legends</h3>
+                        <div class="game-meta">
+                            <span class="genre rpg">RPG</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p>Build your legend in this massive open-world fantasy RPG with unprecedented character customization.</p>
+                        <a href="#" class="btn btn-primary btn-small">View Details</a>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <img src="https://images.unsplash.com/photo-1551103782-8ab07afd45c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Velocity X">
+                    <div class="game-info">
+                        <h3 class="game-title">Velocity X</h3>
+                        <div class="game-meta">
+                            <span class="genre racing">Racing</span>
+                            <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p>Experience hyper-realistic racing with the most advanced physics engine ever created.</p>
+                        <a href="#" class="btn btn-primary btn-small">View Details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all">
+                <a href="#" class="btn btn-primary">View All Games</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="latest-news" id="news">
+        <div class="container">
+            <div class="section-title">
+                <h2>Gaming News</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="news-grid">
+                <div class="news-card big">
+                    <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Major Game Announcement">
+                    <div class="news-content">
+                        <span class="news-date">June 15, 2023</span>
+                        <h3>E3 2023: Biggest Announcements and Trailers</h3>
+                        <p>The gaming world's most anticipated event delivered stunning reveals and surprises that will shape the future of gaming for years to come.</p>
+                        <a href="#" class="btn btn-primary btn-small">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?ixlib=rb-1.2.1&auto=format&fit=crop&w=1351&q=80" alt="Game Update">
+                    <div class="news-content">
+                        <span class="news-date">June 12, 2023</span>
+                        <h3>Massive Update Coming to Cyberpunk Overdrive</h3>
+                        <p>New maps, weapons, and game modes revealed for the popular FPS title in upcoming season 4 update.</p>
+                        <a href="#" class="btn btn-primary btn-small">Read More</a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Console News">
+                    <div class="news-content">
+                        <span class="news-date">June 10, 2023</span>
+                        <h3>Next-Gen Console Sales Reach New Heights</h3>
+                        <p>Record-breaking numbers as supply chain issues finally ease and new exclusive titles drive demand.</p>
+                        <a href="#" class="btn btn-primary btn-small">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Esports Section -->
+    <section class="esports" id="esports">
+        <div class="container">
+            <div class="section-title">
+                <h2>Esports Tournaments</h2>
+                <div class="underline"></div>
+            </div>
+            <div class="tournament-grid">
+                <div class="tournament-card">
+                    <div class="tournament-date">
+                        <span class="day">24</span>
+                        <span class="month">JUN</span>
+                    </div>
+                    <div class="tournament-info">
+                        <h3>Cyberpunk Overdrive World Championship</h3>
+                        <p>$2,000,000 Prize Pool • Online Qualifiers</p>
+                        <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                    </div>
+                </div>
+                <div class="tournament-card">
+                    <div class="tournament-date">
+                        <span class="day">15</span>
+                        <span class="month">JUL</span>
+                    </div>
+                    <div class="tournament-info">
+                        <h3>Realm of Legends International</h3>
+                        <p>$1,500,000 Prize Pool • Los Angeles</p>
+                        <a href="#" class="btn btn-primary btn-small">Register Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h3>Join Our Gaming Community</h3>
+                <p>Subscribe to get exclusive news, early access to betas, and special offers</p>
+                <form>
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>Nexus Gaming</h4>
+                    <p>Your ultimate destination for everything gaming. News, reviews, esports, and community.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#esports">Esports</a></li>
+                        <li><a href="#community">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Nexus Gaming. All rights reserved. All trademarks are property of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function showMenu() {
+            document.getElementById("navLinks").style.right = "0";
+        }
+        
+        function hideMenu() {
+            document.getElementById("navLinks").style.right = "-200px";
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+/* ===== Reset & Base Styles ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a2e; /* Dark blue background */
+    color: #e6e6e6; /* Light gray text */
+}
+
+/* ===== Color Variables ===== */
+:root {
+    /* Primary Colors */
+    --primary: #ff4655; /* Vibrant red (for buttons/CTAs) */
+    --primary-dark: #d93a4a;
+    --secondary: #0f1923; /* Dark blue (for headers) */
+    --accent: #00f0ff; /* Cyan accent */
+    
+    /* Backgrounds */
+    --bg-dark: #1a1a2e;
+    --bg-light: #2a2a3e;
+    
+    /* Text */
+    --text-light: #ffffff;
+    --text-muted: #b8b8b8;
+    
+    /* Game-themed accents */
+    --legendary: #ff8c00; /* Orange */
+    --epic: #b026ff; /* Purple */
+    --rare: #0070dd; /* Blue */
+}
+
+/* ===== Utility Classes ===== */
+.text-primary { color: var(--primary); }
+.text-accent { color: var(--accent); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 70, 85, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.btn-outline:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+/* ===== Header ===== */
+header {
+    background-color: var(--secondary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+/* ===== Hero Section ===== */
+.hero {
+    background: linear-gradient(135deg, rgba(15, 25, 35, 0.9), rgba(26, 26, 46, 0.9)), 
+                url('https://images.unsplash.com/photo-1542751371-adc38448a05e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: var(--text-muted);
+}
+
+/* ===== Game Cards ===== */
+.game-card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary);
+}
+
+.game-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid var(--primary);
+}
+
+.game-info {
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    color: var(--text-light);
+}
+
+.game-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.genre {
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.genre.fps {
+    background-color: #ff4655;
+    color: white;
+}
+
+.genre.rpg {
+    background-color: #b026ff;
+    color: white;
+}
+
+.genre.racing {
+    background-color: #00f0ff;
+    color: var(--secondary);
+}
+
+.rating {
+    color: #ffd700; /* Gold */
+    font-weight: 600;
+}
+
+/* ===== News Section ===== */
+.news-card {
+    background: var(--bg-light);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.news-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-date {
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ===== Newsletter ===== */
+.newsletter {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: var(--secondary);
+    color: var(--text-muted);
+}
+
+.social-links a {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.social-links a:hover {
+    background-color: var(--primary);
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .nav-links {
+        background-color: var(--secondary);
+    }
+}
